@@ -6,11 +6,12 @@ function App() {
   let [counter,setCounter]=useState(1)
   
   const addC=function(){
-    setCounter(counter+1)
+    if(counter<20)  setCounter(counter+1)
+    
     
   }
   const removeC=function(){
-    setCounter(counter-1)
+    if (counter>0)setCounter(counter-1)
     
   }
   return (
