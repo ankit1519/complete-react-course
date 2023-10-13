@@ -6,7 +6,19 @@ function App() {
   let [counter,setCounter]=useState(1)
   
   const addC=function(){
-    if(counter<20)  setCounter(counter+1)
+    if(counter<20)  {
+      /*setCounter(counter+1)
+      setCounter(counter+1)
+      setCounter(counter+1)
+      setCounter(counter+2)
+      setCounter(counter+1)*/
+     /* setCounter((pc)=>pc+1)
+      setCounter((pc)=>pc+1)
+      setCounter((pc)=>pc+1)
+      setCounter((pc)=>pc+1)*/
+
+      setCounter(counter+1)
+    }
     
     
   }
