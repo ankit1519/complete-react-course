@@ -24,10 +24,14 @@ function App() {
   },[length,isNum,isChar,setPassword])
 
   useEffect(()=>{passwordGenerator()},[length,isNum,isChar])
+
+  
   const copyToClip=useCallback(()=>{
     passwordRef.current?.select();
     window.navigator.clipboard.writeText(password)
   },[password])
+
+
   return (
     <>
       <h1 className='text-4xl text-center my-5 text-white'>Password generator</h1>
@@ -61,8 +65,6 @@ function App() {
            }} />
            <label >Character</label>
           </div>
-
-           
         </div>
       </div>
     </>
