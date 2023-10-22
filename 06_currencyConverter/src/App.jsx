@@ -21,7 +21,7 @@ function App() {
     <div
         className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
         style={{
-            backgroundImage: `url(https://images.pexels.com/photos/68912/pexels-photo-68912.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1})`,
+            backgroundImage: `url(https://images.pexels.com/photos/210574/pexels-photo-210574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1})`,
         }}
     >
         <div className="w-full">
@@ -46,10 +46,10 @@ function App() {
                     <div className="relative w-full h-0.5">
                         <button
                             type="button"
-                            className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white rounded-md bg-blue-600 text-white px-2 py-0.5"
+                            className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white rounded-md bg-orange-700 text-white px-2 py-0.5"
                             onClick={swap}
                         >
-                            swap
+                            Swap
                         </button>
                     </div>
                     <div className="w-full mt-1 mb-4">
@@ -59,9 +59,10 @@ function App() {
                             currencyOptions={options}
                             onCurrencyChange={(currency)=>setTo(currency)}
                             selectCurrency={to}
+                            amtDisable
                         />
                     </div>
-                    <button type="submit" className="w-full bg-blue-600 text-white px-4 py-3 rounded-lg">
+                    <button type="submit" className="w-full bg-orange-700 text-white px-4 py-3 rounded-lg">
                         Convert {from.toUpperCase()} to {to.toLowerCase()}
                     </button>
                 </form>
