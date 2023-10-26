@@ -13,7 +13,7 @@ export const TodoContext=createContext({
     toggleComplete:(id)=>{}
 })
 
-export default function useTodo(){
+export function useTodo(){
     return useContext(TodoContext)
 }
 export const TodoProvider=TodoContext.Provider
